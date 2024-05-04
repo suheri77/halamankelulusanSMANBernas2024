@@ -6,8 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing Effect With CSS</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            position: relative;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1; /* Membuat gambar tetap berada di atas tulisan */
+        }
+    </style>
 </head>
 <body>
+    <img src="LOGO BERNAS 2.png" alt="">
     <h1 class="typewriter">Selamat Anda Lulus!!!</h1>
 </body>
 </html>
